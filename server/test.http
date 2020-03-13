@@ -1,0 +1,24 @@
+@uri=http://localhost:3000/ly/api
+### 根据查看博客详情
+GET  {{uri}}/listBlog/5e6b23294b8d8414dc216a04
+### 根据查看博客
+GET  {{uri}}/listBlog
+###
+
+POST {{uri}}/addComment
+Content-Type: application/json
+
+{
+  "name":"刘康靖",
+  "content":"<p>我是评论3<p>",
+  "blogId":"5e6b6f67722d1f263056d0d2"
+}
+###
+
+GET  {{uri}}/getBlogById/5e6b6f67722d1f263056d0d2
+
+###
+GET  {{uri}}/listComment
+
+###5e68e7ef029e390ce4076681
+GET {{uri}}/listLeaveMessage 
